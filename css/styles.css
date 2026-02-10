@@ -35,7 +35,9 @@ body {
     padding: 0 2rem;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 700;
 }
 
@@ -44,7 +46,6 @@ section {
     border-bottom: 1px solid var(--border-color);
 }
 
-/* Header and Navigation */
 .main-header {
     position: fixed;
     top: 0;
@@ -111,9 +112,8 @@ section {
 }
 
 
-/* About Section */
 #about {
-    padding-top: 140px; 
+    padding-top: 140px;
 }
 
 .about-content {
@@ -169,7 +169,6 @@ section {
     color: var(--accent-color);
 }
 
-/* Skills Section */
 .skills-header {
     text-align: center;
     margin-bottom: 3rem;
@@ -204,7 +203,7 @@ section {
 
 .skill-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .skill-card img {
@@ -218,7 +217,6 @@ section {
     font-weight: 500;
 }
 
-/* Education section */
 .education-grid {
     display: flex;
     justify-content: center;
@@ -252,7 +250,7 @@ section {
 
     background-color: var(--surface-color);
     border: 1px solid var(--border-color);
-    padding: 2rem 1rem; 
+    padding: 2rem 1rem;
     border-radius: 12px;
     box-shadow: 0 2px 5px rgb(203, 203, 203);
     width: 100%;
@@ -272,7 +270,6 @@ section {
 }
 
 
-/* Portfolio & Contact Sections (Placeholders) */
 .placeholder-content {
     min-height: 50vh;
     display: flex;
@@ -310,10 +307,221 @@ section {
     cursor: pointer;
 }
 
-/* Footer */
 .main-footer {
     padding: 2rem 0;
     text-align: center;
     color: var(--secondary-text-color);
     font-size: 0.9rem;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-header p {
+    color: var(--secondary-text-color);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: var(--border-color);
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    margin-left: -1px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.timeline-dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: auto;
+    left: 12px;
+    background-color: var(--accent-color);
+    border: 4px solid var(--bg-color);
+    top: 22px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-content {
+    padding: 20px 30px;
+    background-color: var(--surface-color);
+    position: relative;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-date {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.timeline-title {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: var(--primary-text-color);
+}
+
+.timeline-company {
+    font-size: 1.1rem;
+    color: var(--secondary-text-color);
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.timeline-description {
+    color: var(--secondary-text-color);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.timeline-responsibilities {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: var(--secondary-text-color);
+}
+
+.timeline-responsibilities li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+    .timeline::after {
+        left: 50%;
+    }
+
+    .timeline-item {
+        width: 50%;
+    }
+
+    .timeline-item:nth-child(odd) {
+        left: 0;
+        padding-right: 40px;
+        padding-left: 0;
+        text-align: right;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 50%;
+        padding-left: 40px;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-dot {
+        left: auto;
+        right: -8px;
+    }
+
+    .timeline-item:nth-child(even) .timeline-dot {
+        left: -8px;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-responsibilities {
+        direction: rtl;
+        text-align: right;
+        list-style-position: inside;
+    }
+}
+
+.skill-card i {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+
+.about-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    color: var(--primary-text-color);
+}
+
+.experience-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.experience-card {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgb(203, 203, 203);
+    width: 100%;
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.experience-card .timeline-title {
+    margin-bottom: 0.2rem;
+}
+
+.experience-card .timeline-company {
+    margin-bottom: 0;
+}
+
+.experience-card .timeline-date {
+    white-space: nowrap;
+}
+
+.experience-card .timeline-responsibilities {
+    padding-left: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .card-header-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

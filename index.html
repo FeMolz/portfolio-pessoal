@@ -1,173 +1,303 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felipe Molz | Developer Portfolio</title>
-    
-    <!-- Google Fonts: Inter -->
+    <title>Felipe Molz | Desenvolvedor de Software</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
-    <style>
-
-    </style>
 </head>
+
 <body>
 
-    <!-- Header -->
     <header class="main-header">
         <div class="container">
             <a href="#" class="logo">Felipe Molz</a>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#about" class="nav-link active">About</a></li>
-                    <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#experience" class="nav-link">Experience</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#portfolio" class="nav-link">Education</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#about" class="nav-link active">Sobre</a></li>
+                    <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                    <li><a href="#experience" class="nav-link">Experiência</a></li>
+                    <li><a href="#projects" class="nav-link">Projetos</a></li>
+                    <li><a href="#education" class="nav-link">Formação</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- About Section -->
         <section id="about">
             <div class="container about-content">
                 <div class="about-image">
-                    <img src="imgs/foto-perfil - Copia.jpg" alt="portrait of Felipe">
+                    <img src="imgs/foto-perfil - Copia.jpg" alt="Foto de Felipe Molz">
                 </div>
                 <div class="about-text">
-                    <h2>ABOUT ME</h2>
-                    <p class="subtitle">FELIPE MOLZ - WEB DEVELOPER</p>
-                    <p> At the moment focusing in Web Development.</p>
+                    <h2>SOBRE MIM</h2>
+                    <p class="subtitle">FELIPE MOLZ - DESENVOLVEDOR DE SOFTWARE</p>
+                    <p>
+                        Estudante de ciências da computação com foco em desenvolvimento de software e ciência de dados.
+                        Dedicando meus estudos na especialização em JavaScript, Node.js e MongoDB.
+                        Flexível e disposto a aprender outras tecnologias.
+                    </p>
+
+                    <h3>Idiomas</h3>
+                    <ul style="list-style: none; padding: 0; color: var(--secondary-text-color); margin-bottom: 2rem;">
+                        <li><strong>Inglês:</strong> Intermediário (B2)</li>
+                        <li><strong>Português:</strong> Fluente</li>
+                        <li><strong>Japonês:</strong> Básico</li>
+                    </ul>
+
                     <div class="social-links">
-                        <a href="https://github.com/FeMolz" aria-label="GitHub"><i class="bi bi-github"></i></a>
-                        <a href="https://www.linkedin.com/in/felipe-de-borba-molz-21908a2a1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                    </a>
+                        <a href="https://github.com/FeMolz" aria-label="GitHub" target="_blank"><i
+                                class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/felipe-de-borba-molz-21908a2a1" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
-                    
+
             </div>
         </section>
 
-        <!-- Skills Section -->
         <section id="skills">
             <div class="container">
                 <div class="skills-header">
-                    <h2>My Tech Stack</h2>
-                    <p>A collection of technologies I am proficient with, continuously expanding my knowledge base.</p>
+                    <h2>Minhas Habilidades</h2>
+                    <p>Tecnologias com as quais trabalho e estudo constantemente.</p>
                 </div>
                 <div class="skills-grid">
                     <div class="skill-card">
-                        <img src="/imgs/python.png" alt="Python logo">
-                        <h3>Python</h3>
-                    </div>
-                    <div class="skill-card">
-                        <img src="/imgs/html.png" alt="HTML logo">
-                        <h3>HTML</h3>
-                    </div>
-                    <div class="skill-card">
-                        <img src="/imgs/css-3.png" alt="CSS logo">
-                        <h3>CSS</h3>
-                    </div>
-                    <div class="skill-card">
-                        <img src="/imgs/js.png" alt="JavaScript logo">
+                        <img src="imgs/js.png" alt="JavaScript logo">
                         <h3>JavaScript</h3>
                     </div>
                     <div class="skill-card">
-                        <img src="/imgs/node-js.png" alt="Node.js logo">
+                        <img src="imgs/html.png" alt="HTML logo">
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="skill-card">
+                        <img src="imgs/css-3.png" alt="CSS logo">
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="skill-card">
+                        <img src="imgs/node-js.png" alt="Node.js logo">
                         <h3>Node.js</h3>
                     </div>
                     <div class="skill-card">
-                        <img src="/imgs/react.png" alt="React logo">
-                        <h3>React</h3>
+                        <img src="imgs/python.png" alt="Python logo">
+                        <h3>Python</h3>
                     </div>
                     <div class="skill-card">
-                        <img src="/imgs/social.png" alt="Git logo">
+                        <img src="imgs/social.png" alt="Git logo">
                         <h3>Git</h3>
                     </div>
                     <div class="skill-card">
-                        <img src="/imgs/github.png" alt="GitHub logo">
+                        <img src="imgs/github.png" alt="GitHub logo">
                         <h3>GitHub</h3>
+                    </div>
+                    <div class="skill-card">
+                        <img src="imgs/MongoDB.png" alt="MongoDB logo">
+                        <h3>MongoDB</h3>
+                    </div>
+                    <div class="skill-card">
+                        <img src="imgs/postgre.png" alt="PostgreSQL logo">
+                        <h3>PostgreSQL</h3>
+                    </div>
+                    <div class="skill-card">
+                        <img src="imgs/icons8-pandas-48.png" alt="Pandas logo">
+                        <h3>Pandas</h3>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="experience">
-            <div class="container placeholder-content">
-                <h2>Experience</h2>
-                <p>Companies I've worked for.</p>
+            <div class="container">
+                <div class="section-header">
+                    <h2>Experiência</h2>
+                    <p>Minha jornada profissional.</p>
+                </div>
+
+                <div class="experience-grid">
+                    <div class="experience-card">
+                        <div class="card-header-flex">
+                            <div>
+                                <h3 class="timeline-title">Suporte Técnico</h3>
+                                <h4 class="timeline-company">CVF Incorporadora</h4>
+                            </div>
+                            <div class="timeline-date">Agosto 2025 - Momento</div>
+                        </div>
+
+                        <ul class="timeline-responsibilities">
+                            <li><strong>Auxílio no desenvolvimento do aplicativo de gerenciamento de
+                                    RH:</strong><br>
+                                Aplicação para gerenciar dados de funcionários, histórico educacional e conformidade
+                                jurídica.<br>
+                                <em>Tags: Power Apps, SharePoint</em>
+                            </li>
+                            <li><strong>Automatização de migração de banco de dados:</strong><br>
+                                Criação de fluxo de dados para migração de dados em planilhas Excel para
+                                SharePoint.<br>
+                                <em>Tags: Power Automate, Excel, SharePoint</em>
+                            </li>
+                            <li><strong>Automatização de repositório no GitHub:</strong><br>
+                                Desenvolvido script para atualização automática de uma lista JSON com dados de
+                                imóveis.<br>
+                                <em>Tags: GitHub Actions</em>
+                            </li>
+                            <li><strong>Web Page para atualização de dados de imóveis:</strong><br>
+                                Interface web interativa para atualização dos valores na lista JSON.<br>
+                                <em>Tags: Node.js, Express, MongoDB, Vanilla JS, Render</em>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+
         </section>
 
         <section id="projects">
-            <div class="container placeholder-content">
-                <h2>My Projects</h2>
-                <p>Check out my projects.</p>
+            <div class="container section-header">
+                <h2>Meus Projetos</h2>
+                <p>Confira alguns dos meus trabalhos.</p>
+            </div>
+
+            <div class="container" style="max-width: 800px;">
+                <div class="timeline-content" style="margin-bottom: 2rem;">
+                    <h3 class="timeline-title">Gerenciador de Livros</h3>
+                    <p class="timeline-description">
+                        Web Page para manter e gerenciar livros. Permite controle total do acervo pessoal.
+                    </p>
+                    <ul class="timeline-responsibilities">
+                        <li>Funções CRUD completas para livros.</li>
+                        <li>Função "Amigos" para visualizar livros de outras pessoas.</li>
+                        <li>Sistema de livros favoritos.</li>
+                        <li>Busca por gêneros lidos.</li>
+                    </ul>
+                    <p style="margin-top: 1rem; margin-bottom: 1rem;">
+                        <em>Tags: Node.js, Express, MongoDB, Vanilla JS (frontend), Render</em>
+                    </p>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="https://spa-livros.onrender.com" target="_blank"
+                            style="font-size: 1rem; margin-right: 1rem; text-decoration: none;">
+                            <i class="bi bi-globe"></i> Ver Demo
+                        </a>
+                        <a href="https://github.com/FeMolz/SPA_LIVROS" target="_blank"
+                            style="font-size: 1rem; text-decoration: none;">
+                            <i class="bi bi-github"></i> Código Fonte
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-content" style="margin-bottom: 2rem;">
+                    <h3 class="timeline-title">Sistema de Cadastro (To Do List)</h3>
+                    <p class="timeline-description">
+                        Aplicação simples de gerenciamento e cadastro.
+                    </p>
+                    <ul class="timeline-responsibilities">
+                        <li>Sistema de cadastro e listagem.</li>
+                        <li>Implementação backend com Node.js e MongoDB.</li>
+                        <li>Frontend simples com Vanilla JS.</li>
+                    </ul>
+                    <p style="margin-top: 1rem; margin-bottom: 1rem;">
+                        <em>Tags: JavaScript, Node.js, MongoDB, Vanilla JS</em>
+                    </p>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <span
+                            style="font-size: 1rem; margin-right: 1rem; color: var(--secondary-text-color); cursor: not-allowed;">
+                            <i class="bi bi-slash-circle"></i> Demo Indisponível
+                        </span>
+                        <a href="https://github.com/FeMolz/APP_CADASTRO" target="_blank"
+                            style="font-size: 1rem; text-decoration: none;">
+                            <i class="bi bi-github"></i> Código Fonte
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-content" style="margin-bottom: 2rem;">
+                    <h3 class="timeline-title">Sistema de RH (PERN Stack)</h3>
+                    <p class="timeline-description">
+                        Releitura do sistema de RH da CVF Incorporadora, desenvolvido originalmente em Low Code.
+                    </p>
+                    <ul class="timeline-responsibilities">
+                        <li>Reimplementação completa usando Stack PERN.</li>
+                        <li>Gerenciamento de dados de funcionários.</li>
+                        <li>Banco de dados relacional PostgreSQL.</li>
+                        <li>Frontend interativo com React.</li>
+                    </ul>
+                    <p style="margin-top: 1rem; margin-bottom: 1rem;">
+                        <em>Tags: PostgreSQL, Express, React, Node.js</em>
+                    </p>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <span
+                            style="font-size: 1rem; margin-right: 1rem; color: var(--secondary-text-color); cursor: not-allowed;">
+                            <i class="bi bi-slash-circle"></i> Demo Indisponível
+                        </span>
+                        <a href="https://github.com/FeMolz/APP_RH" target="_blank"
+                            style="font-size: 1rem; text-decoration: none;">
+                            <i class="bi bi-github"></i> Código Fonte
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Education Section -->
-        <section id="portfolio">
+        <section id="education">
             <div class="education-header">
-                <h2>Education</h2>
-                <p>You can see where I studied.</p>
+                <h2>Formação</h2>
+                <p>Histórico acadêmico.</p>
             </div>
             <div class="education-grid">
                 <div class="education-card">
-                    <img src="/imgs/logo_atitus.png" alt="Atitus logo">
-                        <ul>
-                            <li class="education-items">
-                                <h3>Atitus Education</h3>
-                            </li>
-                            <li class="education-items">
-                                <p> Computer Science Bachelor | 2024 - 2028</p>
-                            </li>
-                        </ul>
+                    <img src="imgs/logo_atitus.png" alt="Logo Atitus">
+                    <ul>
+                        <li class="education-items">
+                            <h3>Atitus Educação</h3>
+                        </li>
+                        <li class="education-items">
+                            <p>Ciências da Computação<br>2024 - 2028</p>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="education-card">
-                    <img src="/imgs/cristo_rei_logo.jpg" alt="Cristo Rei logo">
-                        <ul>
-                            <li class="education-items">
-                                <h3>Christ the King</h3>
-                            </li>
-                            <li class="education-items">
-                                <p>High School | 2020 - 2023</p>
-                            </li>
-                        </ul>
+                    <img src="imgs/cristo_rei_logo.jpg" alt="Logo Cristo Rei">
+                    <ul>
+                        <li class="education-items">
+                            <h3>Colégio Franciscano Cristo Rei Marau</h3>
+                        </li>
+                        <li class="education-items">
+                            <p>Ensino Médio<br>2020 - 2023</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
-        
-        <!-- Contact Section -->
+
         <section id="contact">
             <div class="container placeholder-content">
-                <h2>Contact</h2>
-                <p>Have a project in mind or just want to say hello? I'd love to hear from you. Feel free to reach out via my email.</p>
-                <p class="email">felipeborbamolz@gmail.com</p>
+                <h2>Contato</h2>
+                <p>Tem um projeto em mente ou quer apenas dar um oi? Sinta-se à vontade para entrar em contato.</p>
+                <p><strong>Email:</strong> <a href="mailto:felipeborbamolz@gmail.com"
+                        class="email">felipeborbamolz@gmail.com</a></p>
+                <p><strong>Telefone:</strong> 051 999508186</p>
+                <p><strong>Localização:</strong> Marau - Passo Fundo</p>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="main-footer">
         <div class="container">
-            <p>&copy; <span id="ano-atual"></span> Felipe Molz. All Rights Reserved.</p>
+            <p>&copy; <span id="ano-atual"></span> Felipe Molz. Todos os direitos reservados.</p>
         </div>
     </footer>
 
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
-
-
